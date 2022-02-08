@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+<h1 Align=center>Inscription en Licence</h1>
+<form action="4.html">
+    <fieldset>
+        <legend Align=center>Informations Personnelles</legend>
+        <div Align=center>
+            <br> <label for="aaa">Votre Nom</label> <input type="text" name="nom" id="aaa" size="15" maxlength="30" placeholder="votre nom?"><br><br>
+            <label for="bbb">Votre Prenom</label> <input type="text" name="prenom" id="bbb" size="15" maxlength="30" placeholder="votre prenom?"><br><br>
+            Votre Age<input type="number" name="age" size="15" maxlength="30" placeholder="votre age?"><br><br>
+            Votre date de naissance <input type="date"> <br><br>
+            Votre adresse<textarea name="adresse" cols="50" rows="7" placeholder="Votre adresse?"></textarea><br><br>
+            <label for="pwd">Mot de passe</label><input type="password" id="pwd" required><br><br>
+            Retapez votre mot de passe <input type="password" required><br><br>
+            Votre email<input type="email"> <br><br>
+            Votre site <input type="url">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend Align=center>Gestion des groupes et des options</legend>
+        <div Align=center>
+            <br>Votre groupe:<input type="radio" name="groupe" value="Groupe1">Groupe1
+            <input type="radio" name="groupe" value="Groupe2">Groupe2
+            <input type="radio" name="groupe" value="Groupe3">Groupe3 <br><br>
+            <label for="num">Numero de carte etudiant:</label><input type="number" id="num" placeholder="numero de carte d'étudiant?"> <br><br>
+            <p>Choisissez les options que vous desirez:</p>
+            <select name="option" size="5">
+                <option value="J2">J2ee</option>
+                <option value="And">Android</option>
+                <option value="net">.Net</option>
+                <option value="Ht">HTML5</option>
+                <option value="Fl">Flex</option>
+            </select> <br><br>
+            <label for="text">Champ de Vérification:</label><input type="text" id="text" pattern="[INSAT0-9]{4}"title="1 number and 3 letters from INSAT" required>
+        </div>
+    </fieldset>
+    <br>
+    <div Align=center>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Réinitialiser">
+    </div>
+</form>
+</body>
+</html>
